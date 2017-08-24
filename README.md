@@ -4,7 +4,8 @@ Please note that this is just a test application. Its pretty rough at its curren
 
 ## Installation
 
-```npm install
+```
+npm install
 ```
 
 To compile sqlite3 for osx you have to run the following commands
