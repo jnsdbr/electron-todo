@@ -1,0 +1,22 @@
+{
+  "name": "de.jnsdbr.todo",
+  "version": "1.0.0",
+  "description": "Basic Todo App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "rebuild": "cd node_modules/sqlite3 && npm run prepublish && node-gyp configure --module_name=node_sqlite3 --module_path=../lib/binding/electron-v1.7-darwin-x64 && node-gyp rebuild --target=1.7.5 --arch=x64 --target_platform=darwin --dist-url=https://atom.io/download/atom-shell --module_name=node_sqlite3 --module_path=../lib/binding/electron-v1.7-darwin-x64"
+  },
+  "keywords": [
+    "todo",
+    "electron",
+    "atom"
+  ],
+  "author": "Jens de Boer <hello@jnsdbr.de>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.7.5",
+    "sqlite3": "^3.1.9"
+  }
+}
